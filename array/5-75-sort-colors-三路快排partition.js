@@ -14,9 +14,14 @@
 //
 // 2.这道题也可以用一次三路快排。数组分为 3 部分，第一个部分都是 0，中间部分都是 1，最后部分都是 2 。
 
+/**
+ * 三路快排 partition
+ * */
+
 function sortColors(nums) {
     let zero = -1 // nums[0...zero] 0
     let two = nums.length // nums[two...nums.length - 1] 2
+
     for (let i = 0; i < two;) {
         if (nums[i] === 1) {
             i++

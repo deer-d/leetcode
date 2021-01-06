@@ -31,6 +31,27 @@ function mergeSortedArray(nums1, m, nums2, n) {
 
 }
 
+function merge(num1, m, num2, n) {
+    let i = m - 1
+    let j = n - 1
+    let k = m + n - 1
+    // 从后面往前放，只需要循环一次即可
+    for (i >= 0 && j >= 0; k--;) {
+        if (nums1[i] > nums2[j]) {
+            nums1[k] = nums1[i]
+            i--
+        } else {
+            nums1[k] = nums2[j]
+            j--
+        }
+    }
+    for (j >= 0; k--;) {
+        nums1[k] = nums2[j]
+        j--
+    }
+}
+
+
 // m = 4
 //           p
 // [1, 2, 5, 7]

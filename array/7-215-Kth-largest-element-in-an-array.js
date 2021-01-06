@@ -55,4 +55,4 @@ function swap(nums, index1, index2) {
 }
 
 let nums = [0, 2, 1, 2, 8, 6]
-// console.log(findKthLargest(nums, 4))
+console.log(findKthLargest(nums, 4))

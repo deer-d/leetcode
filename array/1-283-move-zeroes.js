@@ -20,11 +20,8 @@ function moveZeroes(nums) {
 
 }
 
-const __main = () => {
-    let nums = [2, 0, 3, 0, 4]
+let nums = [2, 0, 3, 0, 4]
 
-    moveZeroes(nums)
+moveZeroes(nums)
 
-    console.log(nums)
-}
-__main()
+console.log(nums)
