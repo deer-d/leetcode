@@ -6,13 +6,13 @@ class Node {
     }
 }
 
-class LinkedListClass {
+class LinkedList {
     constructor() {
         this.head = new Node()
         this._length = 0
     }
 
-    createLinkedList(arr) {
+    create(arr) {
         if (arr.length === 0) return null
 
         let head = new Node(arr[0])
@@ -24,7 +24,7 @@ class LinkedListClass {
         return head
     }
 
-    printLinkedList(head) {
+    print(head) {
         let curNode = head
         while(curNode !== null) {
             console.log(curNode.val + ' -> ')
@@ -122,6 +122,6 @@ class LinkedListClass {
     }
 }
 module.exports = {
-    LinkedListClass,
+    LinkedList,
     Node
 }
